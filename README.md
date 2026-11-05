@@ -11,7 +11,7 @@ VPC networks they answer queries from.
 
 ```hcl
 module "dns" {
-  source = "github.com/moveeeax/terraform-google-dns"
+  source = "github.com/moveeeax/terraform-google-dns?ref=v1.0.0"
 
   project_id = var.project_id
   name       = "prod-zone"
@@ -48,7 +48,7 @@ them, or the zone is created and answers nobody:
 
 ```hcl
 module "internal_dns" {
-  source = "github.com/moveeeax/terraform-google-dns"
+  source = "github.com/moveeeax/terraform-google-dns?ref=v1.0.0"
 
   project_id                  = var.project_id
   name                        = "internal-zone"
